@@ -23,18 +23,18 @@
 
 ## 目錄結構
 
-paradise-game-website/
-├── index.html # 首頁
-├── game-intro.html # 遊戲介紹頁面
-├── game-guide.html # 遊戲論壇頁面
-├── service.html # 客服中心頁面
-├── download.html # 遊戲下載頁面
-├── style.css # 主要樣式表
-├── images/ # 圖片資源目錄
-└── game-intro/ # 遊戲介紹子頁面
-├── basic.html # 基本設置
-├── career.html # 職業介紹
-├── tutorial.html # 新手教學
-├── upgrade.html # 升級獎勵
-├── exchange.html # 遊戲交流
-└── ability.html # 能力介紹
+- paradise-game-website/
+- ├── index.html # 首頁
+- ├── game-intro.html # 遊戲介紹頁面
+- ├── game-guide.html # 遊戲論壇頁面
+- ├── service.html # 客服中心頁面
+- ├── download.html # 遊戲下載頁面
+- ├── style.css # 主要樣式表
+- ├── images/ # 圖片資源目錄
+- └── game-intro/ # 遊戲介紹子頁面
+- ├── basic.html # 基本設置
+- ├── career.html # 職業介紹
+- ├── tutorial.html # 新手教學
+- ├── upgrade.html # 升級獎勵
+- ├── exchange.html # 遊戲交流
+- └── ability.html # 能力介紹
