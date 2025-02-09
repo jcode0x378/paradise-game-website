@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>遊戲交流 - 遊戲介紹</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="exchange.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="原神遊戲" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="../index.html"><i class="fas fa-home"></i> 首頁</a>
+          </li>
+          <li>
+            <a href="../game-intro.html" class="active"
+              ><i class="fas fa-gamepad"></i> 遊戲介紹</a
+            >
+          </li>
+          <li>
+            <a href="../game-guide.html"
+              ><i class="fas fa-book"></i> 遊戲論壇</a
+            >
+          </li>
+          <li>
+            <a href="../service.html"
+              ><i class="fas fa-headset"></i> 客服中心</a
+            >
+          </li>
+          <li>
+            <a href="../download.html"
+              ><i class="fas fa-download"></i> 遊戲下載</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <div class="breadcrumb">
+        <a href="game-intro.html">遊戲介紹</a> > 遊戲交流
+      </div>
+
+      <article class="game-content">
+        <h1 class="content-title">遊戲交流</h1>
+
+        <section class="content-section">
+          <h2>交流系統</h2>
+          <div class="chat-system">
+            <div class="chat-type">
+              <h3><i class="fas fa-globe"></i> 世界頻道</h3>
+              <p>全服玩家都可以看到的公共聊天頻道</p>
+              <div class="chat-example">
+                <span class="chat-world">[世界] 玩家1：大家好！</span>
+              </div>
+            </div>
+
+            <div class="chat-type">
+              <h3><i class="fas fa-users"></i> 隊伍頻道</h3>
+              <p>僅限隊伍成員可見的聊天頻道</p>
+              <div class="chat-example">
+                <span class="chat-party">[隊伍] 隊長：準備開始！</span>
+              </div>
+            </div>
+
+            <div class="chat-type">
+              <h3><i class="fas fa-user-friends"></i> 私聊系統</h3>
+              <p>與特定玩家進行私密對話</p>
+              <div class="chat-example">
+                <span class="chat-private">[密語] 玩家2：你在哪裡？</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>社交功能</h2>
+          <div class="social-features">
+            <div class="feature-card">
+              <i class="fas fa-user-plus"></i>
+              <h3>好友系統</h3>
+              <ul>
+                <li>添加好友</li>
+                <li>查看在線狀態</li>
+                <li>快速組隊</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-handshake"></i>
+              <h3>交易系統</h3>
+              <ul>
+                <li>安全交易</li>
+                <li>物品查看</li>
+                <li>交易記錄</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-store"></i>
+              <h3>拍賣系統</h3>
+              <ul>
+                <li>物品上架</li>
+                <li>價格競標</li>
+                <li>歷史記錄</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <a
+            href="https://www.gamex123.com/lineage.html?gad_source=1&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y51rwZZqv99G6Ot2fRDoJoBI2g0LN68Yhf5P4oKyRyGMXXYcu7ZHyhoC62sQAvD_BwE"
+            target="_blank"
+          >
+            <img
+              src="../images/sf123.gif"
+              alt="官方網站"
+              class="official-site"
+            />
+          </a>
+          <p><i class="fas fa-clock"></i> 客服時間：09:00-18:00</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector('.menu-toggle')
+        .addEventListener('click', function () {
+          document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>原神遊戲天堂</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="原神遊戲" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> 首頁</a>
+          </li>
+          <li>
+            <a href="game-intro.html"
+              ><i class="fas fa-gamepad"></i> 遊戲介紹</a
+            >
+          </li>
+          <li>
+            <a href="game-guide.html"><i class="fas fa-book"></i> 遊戲論壇</a>
+          </li>
+          <li>
+            <a href="service.html"><i class="fas fa-headset"></i> 客服中心</a>
+          </li>
+          <li>
+            <a href="download.html"><i class="fas fa-download"></i> 遊戲下載</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="announcements">
+        <div class="announcement-slider">
+          <div class="announcement">
+            <i class="fas fa-bullhorn"></i>
+            <span>最新活動：12月限定活動即將開始！</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="server-status">
+        <div class="status-card">
+          <div class="status-header">
+            <h2><i class="fas fa-server"></i> 戰神服務器</h2>
+            <span class="status-badge online">運行中</span>
+          </div>
+          <div class="status-info">
+            <p class="server-time">
+              <i class="far fa-clock"></i> 開服時間：12-16 晚間 20:00
+            </p>
+            <div class="server-stats">
+              <ul>
+                <li><i class="fas fa-sync"></i> 時間重啟：18 時</li>
+                <li><i class="fas fa-star"></i> 經驗倍率：25 倍</li>
+                <li><i class="fas fa-coins"></i> 金錢倍率：2 倍</li>
+                <li><i class="fas fa-gem"></i> 打寶倍率：2 倍</li>
+                <li><i class="fas fa-hand-point-up"></i> 手點能力上限：35</li>
+                <li><i class="fas fa-flask"></i> 萬能藥可喝：10 瓶</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-links">
+        <div class="link-card">
+          <div class="card-content">
+            <img src="images/activity.jpg" alt="活動相關" />
+            <h3><i class="fas fa-calendar-alt"></i> 活動相關</h3>
+            <div class="card-overlay">
+              <span>查看最新活動</span>
+            </div>
+          </div>
+        </div>
+        <div class="link-card">
+          <div class="card-content">
+            <img src="images/tutorial.jpg" alt="新手教學" />
+            <h3><i class="fas fa-book"></i> 新手教學</h3>
+            <div class="card-overlay">
+              <span>開始教學</span>
+            </div>
+          </div>
+        </div>
+        <div class="link-card">
+          <div class="card-content">
+            <img src="images/forum.jpg" alt="遊戲論壇" />
+            <h3><i class="fas fa-comments"></i> 遊戲論壇</h3>
+            <div class="card-overlay">
+              <span>進入論壇</span>
+            </div>
+          </div>
+        </div>
+        <div class="link-card">
+          <div class="card-content">
+            <img src="images/service.jpg" alt="客服中心" />
+            <h3><i class="fas fa-headset"></i> 客服中心</h3>
+            <div class="card-overlay">
+              <span>聯繫客服</span>
+            </div>
+          </div>
+        </div>
+        <div class="link-card">
+          <div class="card-content">
+            <img src="images/download.jpg" alt="遊戲下載" />
+            <h3><i class="fas fa-download"></i> 遊戲下載</h3>
+            <div class="card-overlay">
+              <span>立即下載</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <a href="https://www.gamex123.com/" target="_blank">
+            <img src="images/sf123.gif" alt="官方網站" class="official-site" />
+          </a>
+          <p><i class="fas fa-clock"></i> 客服時間：09:00-18:00</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector('.menu-toggle')
+        .addEventListener('click', function () {
+          document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>

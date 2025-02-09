@@ -1,0 +1,182 @@
+/* 內容頁面樣式 */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.breadcrumb a {
+  color: #ff9933;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.content-title {
+  color: #ff9933;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-section {
+  background: rgba(51, 51, 51, 0.8);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  color: #ff9933;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ff9933;
+  padding-bottom: 0.5rem;
+}
+
+.requirement-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.req-item {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #663300;
+}
+
+.req-item h3 {
+  color: #ff9933;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ff9933;
+  padding-bottom: 0.5rem;
+}
+
+.req-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.req-item li {
+  color: #fff;
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.req-item li:before {
+  content: '►';
+  color: #ff9933;
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.control-settings {
+  margin-top: 1.5rem;
+}
+
+.settings-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #663300;
+}
+
+.settings-table th,
+.settings-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #663300;
+}
+
+.settings-table th {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  color: #ff9933;
+  font-weight: bold;
+}
+
+.settings-table tr:hover {
+  background: rgba(255, 153, 51, 0.1);
+}
+
+.interface-settings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.setting-item {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #663300;
+}
+
+.setting-item h3 {
+  color: #ff9933;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.setting-item p {
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.setting-item img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #663300;
+  margin-top: 1rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .requirement-box {
+    grid-template-columns: 1fr;
+  }
+
+  .interface-settings {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-table {
+    font-size: 0.9rem;
+  }
+
+  .settings-table th,
+  .settings-table td {
+    padding: 0.8rem;
+  }
+
+  .req-item,
+  .setting-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .settings-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .req-item h3,
+  .setting-item h3 {
+    font-size: 1.1rem;
+  }
+}

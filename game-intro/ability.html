@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>能力介紹 - 遊戲介紹</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="ability.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="原神遊戲" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html"><i class="fas fa-home"></i> 首頁</a></li>
+          <li><a href="../game-intro.html" class="active"><i class="fas fa-gamepad"></i> 遊戲介紹</a></li>
+          <li><a href="../game-guide.html"><i class="fas fa-book"></i> 遊戲論壇</a></li>
+          <li><a href="../service.html"><i class="fas fa-headset"></i> 客服中心</a></li>
+      <!-- 導航欄與其他頁面相同 -->
+    </header>
+
+    <main class="content-wrapper">
+      <div class="breadcrumb">
+        <a href="game-intro.html">遊戲介紹</a> > 能力介紹
+      </div>
+
+      <article class="game-content">
+        <h1 class="content-title">能力介紹</h1>
+
+        <section class="content-section">
+          <h2>基礎屬性</h2>
+          <div class="ability-grid">
+            <div class="ability-card">
+              <div class="ability-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="ability-info">
+                <h3>生命值</h3>
+                <p>決定角色的存活能力</p>
+                <div class="ability-stats">
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 80%"></div>
+                  </div>
+                  <span>80/100</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ability-card">
+              <div class="ability-icon">
+                <i class="fas fa-fist-raised"></i>
+              </div>
+              <div class="ability-info">
+                <h3>攻擊力</h3>
+                <p>影響角色的傷害輸出</p>
+                <div class="ability-stats">
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 75%"></div>
+                  </div>
+                  <span>75/100</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ability-card">
+              <div class="ability-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="ability-info">
+                <h3>防禦力</h3>
+                <p>減少受到的傷害</p>
+                <div class="ability-stats">
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 65%"></div>
+                  </div>
+                  <span>65/100</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>特殊能力</h2>
+          <div class="special-abilities">
+            <div class="special-card">
+              <h3>技能強化</h3>
+              <div class="skill-tree">
+                <div class="skill-node active">基礎</div>
+                <div class="skill-node">進階</div>
+                <div class="skill-node locked">大師</div>
+              </div>
+              <p>通過升級解鎖更強大的技能</p>
+            </div>
+
+            <div class="special-card">
+              <h3>元素親和</h3>
+              <div class="element-grid">
+                <div class="element-item">
+                  <i class="fas fa-fire"></i>
+                  <span>火</span>
+                </div>
+                <div class="element-item">
+                  <i class="fas fa-tint"></i>
+                  <span>水</span>
+                </div>
+                <div class="element-item">
+                  <i class="fas fa-wind"></i>
+                  <span>風</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <a href="https://www.gamex123.com/lineage.html?gad_source=1&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y51rwZZqv99G6Ot2fRDoJoBI2g0LN68Yhf5P4oKyRyGMXXYcu7ZHyhoC62sQAvD_BwE" target="_blank">
+            <img src="../images/sf123.gif" alt="官方網站" class="official-site" />
+          </a>
+          <p><i class="fas fa-clock"></i> 客服時間：09:00-18:00</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector('.menu-toggle')
+        .addEventListener('click', function () {
+          document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+/* 能力介紹頁面專用樣式 */
+.ability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.ability-card {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #663300;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ability-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 153, 51, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ability-icon i {
+  font-size: 2rem;
+  color: #ff9933;
+}
+
+.ability-info {
+  flex: 1;
+}
+
+.ability-info h3 {
+  color: #ff9933;
+  margin-bottom: 0.5rem;
+}
+
+.ability-info p {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.ability-stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-bar {
+  flex: 1;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background: #ff9933;
+  transition: width 0.3s ease;
+}
+
+.ability-stats span {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.special-abilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.special-card {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #663300;
+}
+
+.special-card h3 {
+  color: #ff9933;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skill-tree {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.skill-node {
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.skill-node.active {
+  background: #ff9933;
+  color: #2a1010;
+}
+
+.skill-node.locked {
+  background: #666;
+  color: #999;
+}
+
+.skill-node.locked::after {
+  content: '\f023';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: #ff9933;
+}
+
+.element-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.element-item {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.element-item i {
+  font-size: 2rem;
+  color: #ff9933;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .ability-grid,
+  .special-abilities {
+    grid-template-columns: 1fr;
+  }
+
+  .ability-card {
+    margin: 0 1rem;
+  }
+
+  .skill-node {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ability-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ability-icon i {
+    font-size: 1.5rem;
+  }
+
+  .element-grid {
+    grid-template-columns: 1fr;
+  }
+}

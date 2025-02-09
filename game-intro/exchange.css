@@ -1,0 +1,117 @@
+/* 遊戲交流頁面專用樣式 */
+.chat-system {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.chat-type {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #663300;
+}
+
+.chat-type h3 {
+  color: #ff9933;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.chat-type p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.chat-example {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.chat-world {
+  color: #fff;
+}
+
+.chat-party {
+  color: #00ff00;
+}
+
+.chat-private {
+  color: #ff69b4;
+}
+
+.social-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.feature-card {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #663300;
+  text-align: center;
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: #ff9933;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #ff9933;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.feature-card ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+
+.feature-card li {
+  margin: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-card li:before {
+  content: '►';
+  color: #ff9933;
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .chat-system,
+  .social-features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-type,
+  .feature-card {
+    padding: 1rem;
+  }
+
+  .feature-card i {
+    font-size: 2rem;
+  }
+}

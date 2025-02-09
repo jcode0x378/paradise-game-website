@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>遊戲下載 - 原神遊戲天堂</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="原神遊戲" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> 首頁</a>
+          </li>
+          <li>
+            <a href="game-intro.html"
+              ><i class="fas fa-gamepad"></i> 遊戲介紹</a
+            >
+          </li>
+          <li>
+            <a href="game-guide.html"><i class="fas fa-book"></i> 遊戲論壇</a>
+          </li>
+          <li>
+            <a href="service.html"><i class="fas fa-headset"></i> 客服中心</a>
+          </li>
+          <li>
+            <a href="download.html" class="active"
+              ><i class="fas fa-download"></i> 遊戲下載</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <h1 class="page-title">遊戲下載</h1>
+
+      <div class="download-section">
+        <div class="download-card">
+          <div class="icon-wrapper">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <h2>電腦版本</h2>
+          <div class="specs-list">
+            <p><i class="fas fa-microchip"></i> Windows 10 64位</p>
+            <p><i class="fas fa-processor"></i> Intel Core i5 或更高</p>
+            <p><i class="fas fa-memory"></i> 8GB RAM</p>
+            <p><i class="fas fa-hdd"></i> 檔案大小：45GB</p>
+          </div>
+          <a href="#" class="download-btn pulse-effect">
+            <i class="fas fa-download"></i> 下載 PC 版本
+          </a>
+        </div>
+
+        <div class="download-card">
+          <div class="icon-wrapper">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h2>手機版本</h2>
+          <div class="specs-list">
+            <p><i class="fab fa-android"></i> Android 7.0 以上</p>
+            <p><i class="fab fa-apple"></i> iOS 11.0 以上</p>
+            <p><i class="fas fa-hdd"></i> 檔案大小：15GB</p>
+          </div>
+          <div class="mobile-downloads">
+            <a href="#" class="download-btn pulse-effect">
+              <i class="fab fa-android"></i> Android
+            </a>
+            <a href="#" class="download-btn pulse-effect">
+              <i class="fab fa-apple"></i> iOS
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="system-requirements">
+        <h2><i class="fas fa-laptop-code"></i> 系統需求</h2>
+        <div class="table-wrapper">
+          <table>
+            <tr>
+              <th>配置</th>
+              <th>最低要求</th>
+              <th>推薦配置</th>
+            </tr>
+            <tr>
+              <td>作業系統</td>
+              <td>Windows 7 SP1 64位</td>
+              <td>Windows 10 64位</td>
+            </tr>
+            <tr>
+              <td>處理器</td>
+              <td>Intel Core i3</td>
+              <td>Intel Core i5</td>
+            </tr>
+            <tr>
+              <td>記憶體</td>
+              <td>4GB RAM</td>
+              <td>8GB RAM</td>
+            </tr>
+            <tr>
+              <td>顯示卡</td>
+              <td>NVIDIA GeForce GT 730</td>
+              <td>NVIDIA GeForce GTX 1060</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <a
+            href="https://www.gamex123.com/lineage.html?gad_source=1&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y51rwZZqv99G6Ot2fRDoJoBI2g0LN68Yhf5P4oKyRyGMXXYcu7ZHyhoC62sQAvD_BwE"
+            target="_blank"
+          >
+            <img src="images/sf123.gif" alt="官方網站" class="official-site" />
+          </a>
+          <p><i class="fas fa-clock"></i> 客服時間：09:00-18:00</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector('.menu-toggle')
+        .addEventListener('click', function () {
+          document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>

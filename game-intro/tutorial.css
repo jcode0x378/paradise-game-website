@@ -1,0 +1,202 @@
+/* 新手教學頁面專用樣式 */
+.tutorial-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step-card {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  border-radius: 10px;
+  padding: 2rem;
+  border: 1px solid #663300;
+  position: relative;
+  overflow: hidden;
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  background: #ff9933;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a1010;
+  border: 2px solid #663300;
+}
+
+.step-content {
+  margin-left: 2rem;
+}
+
+.step-content h2 {
+  color: #ff9933;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ff9933;
+  padding-bottom: 0.5rem;
+}
+
+.step-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 1rem 0;
+  border: 1px solid #663300;
+}
+
+.step-description {
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.step-description h3 {
+  color: #ff9933;
+  margin-bottom: 1rem;
+}
+
+.step-tips {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.step-tips li {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step-tips i {
+  color: #ff9933;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.control-item {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.key {
+  background: #ff9933;
+  padding: 0.3rem 0.8rem;
+  border-radius: 3px;
+  color: #2a1010;
+  font-weight: bold;
+}
+
+.action {
+  color: #fff;
+}
+
+.quest-progress {
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #ff9933;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+.quick-tips {
+  margin-top: 3rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.tip-card {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #663300;
+  text-align: center;
+}
+
+.tip-card i {
+  font-size: 2rem;
+  color: #ff9933;
+  margin-bottom: 1rem;
+}
+
+.tip-card h3 {
+  color: #ff9933;
+  margin-bottom: 1rem;
+}
+
+.tip-card p {
+  color: #fff;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .step-content {
+    margin-left: 1rem;
+  }
+
+  .step-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .controls-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .step-card {
+    padding: 1.5rem;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .step-content img {
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,210 @@
+/* 升級獎勵頁面專用樣式 */
+.reward-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.reward-card {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  border-radius: 10px;
+  border: 1px solid #663300;
+  position: relative;
+  overflow: hidden;
+}
+
+.level-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ff9933;
+  color: #2a1010;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.reward-content {
+  padding: 1.5rem;
+}
+
+.reward-content img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.reward-content h3 {
+  color: #ff9933;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.reward-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.reward-list li {
+  color: #fff;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reward-list i {
+  color: #ff9933;
+  width: 20px;
+  text-align: center;
+}
+
+.claim-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.claim-btn.claimed {
+  background: #666;
+  color: #fff;
+  cursor: default;
+}
+
+.claim-btn.available {
+  background: #ff9933;
+  color: #2a1010;
+}
+
+.claim-btn.available:hover {
+  background: #ffad60;
+}
+
+.claim-btn.locked {
+  background: #333;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.reward-card.locked::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.achievement-card {
+  background: linear-gradient(to bottom, #4a1f1f, #2a1010);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #663300;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.achievement-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 153, 51, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-icon i {
+  font-size: 2rem;
+  color: #ff9933;
+}
+
+.achievement-info {
+  flex: 1;
+}
+
+.achievement-info h3 {
+  color: #ff9933;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-info p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  height: 100%;
+  background: #ff9933;
+  transition: width 0.3s ease;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.achievement-reward {
+  color: #ff9933;
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #663300;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .reward-grid,
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reward-card,
+  .achievement-card {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reward-content img {
+    height: 120px;
+  }
+
+  .achievement-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .achievement-icon i {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基本設置 - 遊戲介紹</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="basic.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- 與主頁相同的導航欄 -->
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="原神遊戲" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> 首頁</a>
+          </li>
+          <li>
+            <a href="game-intro.html" class="active"
+              ><i class="fas fa-gamepad"></i> 遊戲介紹</a
+            >
+          </li>
+          <li>
+            <a href="game-guide.html"><i class="fas fa-book"></i> 遊戲論壇</a>
+          </li>
+          <li>
+            <a href="service.html"><i class="fas fa-headset"></i> 客服中心</a>
+          </li>
+          <li>
+            <a href="download.html"><i class="fas fa-download"></i> 遊戲下載</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <div class="breadcrumb">
+        <a href="game-intro.html">遊戲介紹</a> > 基本設置
+      </div>
+
+      <article class="game-content">
+        <h1 class="content-title">基本設置</h1>
+
+        <section class="content-section">
+          <h2>系統需求</h2>
+          <div class="requirement-box">
+            <div class="req-item">
+              <h3>最低配置</h3>
+              <ul>
+                <li>作業系統：Windows 7/8/10 64位元</li>
+                <li>處理器：Intel Core i5</li>
+                <li>記憶體：8GB RAM</li>
+                <li>顯示卡：NVIDIA GeForce GTX 760</li>
+                <li>硬碟空間：10GB 可用空間</li>
+              </ul>
+            </div>
+            <div class="req-item">
+              <h3>建議配置</h3>
+              <ul>
+                <li>作業系統：Windows 10 64位元</li>
+                <li>處理器：Intel Core i7</li>
+                <li>記憶體：16GB RAM</li>
+                <li>顯示卡：NVIDIA GeForce GTX 1060</li>
+                <li>硬碟空間：20GB 可用空間</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>基礎操作設定</h2>
+          <div class="control-settings">
+            <table class="settings-table">
+              <tr>
+                <th>功能</th>
+                <th>預設按鍵</th>
+                <th>說明</th>
+              </tr>
+              <tr>
+                <td>移動</td>
+                <td>W/A/S/D</td>
+                <td>角色移動</td>
+              </tr>
+              <tr>
+                <td>跳躍</td>
+                <td>空白鍵</td>
+                <td>角色跳躍</td>
+              </tr>
+              <tr>
+                <td>攻擊</td>
+                <td>滑鼠左鍵</td>
+                <td>普通攻擊</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>遊戲介面設定</h2>
+          <div class="interface-settings">
+            <div class="setting-item">
+              <h3>畫面設定</h3>
+              <p>可調整解析度、畫質、視角範圍等選項</p>
+              <img src="images/ui-settings.jpg" alt="畫面設定示意圖" />
+            </div>
+            <div class="setting-item">
+              <h3>音效設定</h3>
+              <p>可調整背景音樂、音效、語音等音量</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <a
+            href="https://www.gamex123.com/lineage.html?gad_source=1&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y51rwZZqv99G6Ot2fRDoJoBI2g0LN68Yhf5P4oKyRyGMXXYcu7ZHyhoC62sQAvD_BwE"
+            target="_blank"
+          >
+            <img src="images/sf123.gif" alt="官方網站" class="official-site" />
+          </a>
+          <p><i class="fas fa-clock"></i> 客服時間：09:00-18:00</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector('.menu-toggle')
+        .addEventListener('click', function () {
+          document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>

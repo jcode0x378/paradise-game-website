@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>職業介紹 - 遊戲介紹</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="career.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="原神遊戲" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="../index.html"><i class="fas fa-home"></i> 首頁</a>
+          </li>
+          <li>
+            <a href="game-intro.html" class="active"
+              ><i class="fas fa-gamepad"></i> 遊戲介紹</a
+            >
+          </li>
+          <li>
+            <a href="../game-guide.html"
+              ><i class="fas fa-book"></i> 遊戲論壇</a
+            >
+          </li>
+          <li>
+            <a href="../service.html"
+              ><i class="fas fa-headset"></i> 客服中心</a
+            >
+          </li>
+          <li>
+            <a href="../download.html"
+              ><i class="fas fa-download"></i> 遊戲下載</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <div class="breadcrumb">
+        <a href="game-intro.html">遊戲介紹</a> > 職業介紹
+      </div>
+
+      <article class="game-content">
+        <h1 class="content-title">職業介紹</h1>
+
+        <section class="content-section">
+          <h2>戰士系</h2>
+          <div class="career-grid">
+            <div class="career-card">
+              <img src="../images/warrior.jpg" alt="戰士" />
+              <div class="career-info">
+                <h3>戰士</h3>
+                <p>擅長近戰，具有高防禦力和生命值</p>
+                <ul class="career-stats">
+                  <li><i class="fas fa-heart"></i> 生命值: 90</li>
+                  <li><i class="fas fa-shield-alt"></i> 防禦力: 85</li>
+                  <li><i class="fas fa-fist-raised"></i> 攻擊力: 75</li>
+                </ul>
+              </div>
+            </div>
+            <!-- 更多戰士職業 -->
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>法師系</h2>
+          <div class="career-grid">
+            <div class="career-card">
+              <img src="../images/mage.jpg" alt="法師" />
+              <div class="career-info">
+                <h3>法師</h3>
+                <p>精通魔法，具有強大的遠程攻擊能力</p>
+                <ul class="career-stats">
+                  <li><i class="fas fa-heart"></i> 生命值: 60</li>
+                  <li><i class="fas fa-shield-alt"></i> 防禦力: 45</li>
+                  <li><i class="fas fa-magic"></i> 魔法攻擊: 95</li>
+                </ul>
+              </div>
+            </div>
+            <!-- 更多法師職業 -->
+          </div>
+        </section>
+
+        <!-- 其他職業系列 -->
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <a
+            href="https://www.gamex123.com/lineage.html?gad_source=1&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y51rwZZqv99G6Ot2fRDoJoBI2g0LN68Yhf5P4oKyRyGMXXYcu7ZHyhoC62sQAvD_BwE"
+            target="_blank"
+          >
+            <img
+              src="../images/sf123.gif"
+              alt="官方網站"
+              class="official-site"
+            />
+          </a>
+          <p><i class="fas fa-clock"></i> 客服時間：09:00-18:00</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector('.menu-toggle')
+        .addEventListener('click', function () {
+          document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>

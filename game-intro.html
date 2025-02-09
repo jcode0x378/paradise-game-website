@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>遊戲介紹 - 原神遊戲天堂</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="原神遊戲" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> 首頁</a>
+          </li>
+          <li>
+            <a href="game-intro.html" class="active"
+              ><i class="fas fa-gamepad"></i> 遊戲介紹</a
+            >
+          </li>
+          <li>
+            <a href="game-guide.html"><i class="fas fa-book"></i> 遊戲論壇</a>
+          </li>
+          <li>
+            <a href="service.html"><i class="fas fa-headset"></i> 客服中心</a>
+          </li>
+          <li>
+            <a href="download.html"><i class="fas fa-download"></i> 遊戲下載</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="game-intro-content">
+      <h1 class="page-title">遊戲介紹</h1>
+
+      <div class="intro-grid">
+        <a href="game-intro/basic.html" class="intro-item">基本設置</a>
+        <a href="game-intro/career.html" class="intro-item">職業介紹</a>
+        <a href="game-intro/tutorial.html" class="intro-item">新手教學</a>
+
+        <a href="game-intro/exchange.html" class="intro-item">遊戲交流</a>
+        <a href="game-intro/ability.html" class="intro-item">能力介紹</a>
+        <a href="game-intro/upgrade.html" class="intro-item">升級獎勵</a>
+
+        <a href="game-intro/exp.html" class="intro-item">經驗等級</a>
+        <a href="game-intro/weapon.html" class="intro-item">武器介紹</a>
+        <a href="game-intro/armor.html" class="intro-item">防具介紹</a>
+
+        <a href="game-intro/item.html" class="intro-item">道具介紹</a>
+        <a href="game-intro/quest.html" class="intro-item">任務介紹</a>
+        <a href="game-intro/npc.html" class="intro-item">NPC</a>
+
+        <a href="game-intro/activity.html" class="intro-item">活動介紹</a>
+        <a href="game-intro/camp.html" class="intro-item">特殊陣營</a>
+        <a href="game-intro/star.html" class="intro-item">星盤系統</a>
+
+        <a href="game-intro/clan.html" class="intro-item">村莊幹部</a>
+        <a href="game-intro/blood.html" class="intro-item">血盟介紹</a>
+        <a href="game-intro/pet.html" class="intro-item">寵物介紹</a>
+
+        <a href="game-intro/solution.html" class="intro-item">特殊溶解</a>
+        <a href="game-intro/target.html" class="intro-item">偵查目標</a>
+        <a href="game-intro/choice.html" class="intro-item">遊戲選單</a>
+
+        <a href="game-intro/auto.html" class="intro-item">自動練功</a>
+        <a href="game-intro/home.html" class="intro-item">HOME外掛</a>
+        <a href="game-intro/advanced.html" class="intro-item">高級內掛</a>
+
+        <a href="game-intro/defense.html" class="intro-item">防止外掛</a>
+        <a href="game-intro/mobile.html" class="intro-item">手機綁定</a>
+        <a href="game-intro/rate.html" class="intro-item">機率說明</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <a
+            href="https://www.gamex123.com/lineage.html?gad_source=1&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y51rwZZqv99G6Ot2fRDoJoBI2g0LN68Yhf5P4oKyRyGMXXYcu7ZHyhoC62sQAvD_BwE"
+            target="_blank"
+          >
+            <img src="images/sf123.gif" alt="官方網站" class="official-site" />
+          </a>
+          <p><i class="fas fa-clock"></i> 客服時間：09:00-18:00</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector('.menu-toggle')
+        .addEventListener('click', function () {
+          document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>
